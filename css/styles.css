@@ -1,0 +1,178 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body {
+	/*background-color: cadetblue;*/
+	color: papayawhip;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1.4px;
+	text-shadow: 4px 5px 6px black;
+	font-weight: 300;
+	line-height: 2;
+
+}
+
+h1 {
+	font-size: 78px;
+	text-transform: uppercase;
+
+
+}
+h2 {
+	font-size: 64px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-weight: 200;
+	font-size: 22px;
+	line-height: 1.5em;
+}
+
+p {
+	font-weight: 100;
+	font-size: 18px;
+
+}
+
+header {
+	text-align: center;
+}
+.searchWrap {
+	height: 100vh;
+	background-image: url("../images/bam.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 100px;
+}
+.overlay {
+	background-color: rgba(165, 46, 88, 0.81);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
+
+.wrapper {
+	max-width: 1220px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.searchForHero {
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+input, button {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 24px;
+	padding:20px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+.resultsDisplay {
+	background-image: url("../images/ka-pow.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.overlay2 {
+	background-color: rgba(165, 46, 88, 0.81);
+	height:100%;
+}
+
+/*.heroDisplay {
+	height: 100vh;
+}*/
+
+.results {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.heroCont {
+	display: flex;
+	flex-direction: row;
+}
+
+.imageCapt {
+	width: 50%;
+	padding:2%;
+}
+
+.imageCapt img {
+	width: 100%	;
+}
+
+.deckAppear {
+	width: 50%;
+	padding-left: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+
+@media (max-width: 940px) {
+	h1 {
+		font-size: 64px;
+	}
+	h2 {
+		font-size: 54px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.deckAppear {
+		justify-content: inherit;
+	}
+}
+
+
+@media (max-width: 800px) {
+	.heroCont {
+		flex-direction: column;
+	}
+	.imageCapt, .deckAppear {
+		width: 100%;
+	}
+	.deckAppear {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 46px;
+		
+	}
+	.searchWrap {
+		padding-bottom: 60px;
+	}
+}
